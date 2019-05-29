@@ -69,12 +69,16 @@ h1, h2, h3, h4, h5 {
 	padding: 30px;
 }
 
-header nav {
-	display: inline-block;
+.header {
+	display: flex;
+}
+
+.header nav {
+	display: flex;
 	margin-top: 50px;
 }
 
-header nav a {
+.header nav a {
 	/* TB LR */
 	margin: 0px 60px 0px 0px;
 	color: gray;
@@ -83,10 +87,10 @@ header nav a {
 	top: -10px;
 }
 
-header .logo {
-	margin-top: 30px;
-	margin-left: 10px;
-	display: inline-block;
+.header .logo {
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
 }
 
 .services-header-img {
@@ -165,10 +169,49 @@ li {
 .bottom-right {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-bottom: 30px;
+}
+
+
+@media all and (max-width: 500px) {
+    .section-service-p {
+        width: 50%;
+    }
+    .services-header-img {
+        width: 50%;
+    }
+    .parent-container {
+        flex-direction: column;
+    }
+    .bottom-container {
+        flex-direction: column;
+    }
+
+    .header {
+        width: 50%;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .navigation {
+        flex-flow: column wrap;
+        width: 50%;
+    }
+    .navigation a { 
+        text-align: center; 
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.3); 
+        border-bottom: 1px solid rgba(0,0,0,0.1); 
+    }
+    .logo {
+        margin: 0 auto;
+        order: -1;
+    }
+    footer {
+        width: 50%;
+    }
 }
