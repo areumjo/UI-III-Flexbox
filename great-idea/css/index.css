@@ -71,8 +71,12 @@ h1, h2, h3, h4, h5 {
 	padding: 30px;
 }
 
+header {
+	display: flex;
+}
+
 header nav {
-	display: inline-block;
+	display: flex;
 	margin-top: 50px;
 }
 
@@ -88,61 +92,77 @@ header nav a {
 header .logo {
 	margin-top: 30px;
 	margin-left: 14px;
-	display: inline-block;
+	display: flex;
 }
 
 h1 {
 	font-size: 85px;
 	text-align: center;	
+	display: flex;
+	margin-top: 110px;
+	margin-left: 20px;
+}
+
+.button-container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 80px;
 }
 
 .div-h1 {
-	display: inline-block;
+	display: flex;
+	flex-wrap: wrap;
 	margin-left: 50px;
 }
 
 .div-coding-fig {
-	margin-left: 80px;
+	margin-left: 50px;
 	margin-top: 80px;
-	display: inline-block;
-}
-
-section {
-	margin-bottom: 50px;
+	display: flex;
 }
 
 button {
 	border-color: black;
-	border-width: 2px;
 	background-color: white;
-	display: inline-block;
+	display: flex;
 	text-align: center;
 	font-size: 18px;
-	margin-left: 70px;
-	padding: 8px 50px;
-}
-
-button:hover {
-	background-color: navy;
-	color: white;
+	margin-left: 90px;
+	margin-bottom: 50px;
+	padding: 5px 50px;
 }
 
 .top-content {
-	column-count: 2;
+	display: flex;
 	margin-top: 30px;
 	margin-bottom: 30px;
+}
+
+.top-child {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .middle-img {
-	display: block;
+	display: flex;
+	justify-content: center;
 }
 
 .bottom-content {
-	column-count: 3;
+	display: flex;
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
+.bottom-child {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: 10px;
+}
+
+p {
+	line-height: 1.2;
+}
 .contact {
 	margin-top: 30px;
 	margin-bottom: 50px;
